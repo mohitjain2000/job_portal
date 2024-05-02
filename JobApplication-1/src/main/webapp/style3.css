@@ -1,0 +1,152 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5; /* Changed background color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Shop name styles */
+.shop-name {
+    font-size: 36px; /* Increase font size */
+    color: #007bff; /* Change text color to blue */
+    text-align: center;
+    margin-top: 30px; /* Adjust top margin */
+    text-transform: uppercase;
+    font-weight: bold; /* Add bold font weight */
+    border-bottom: 2px solid #007bff; /* Add a bottom border */
+    padding-bottom: 10px; /* Add padding below the text */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: transparent; /* Set background color to transparent */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    animation: moveText 15s infinite; /* Added animation for moving text */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide any overflowing text */
+    text-overflow: ellipsis; /* Display an ellipsis (...) when text overflows */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+/* Card styles */
+.card {
+    border: none;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+
+/* Animation for moving text */
+@keyframes moveText {
+    0% {
+        transform: translateX(100%); /* Start from the right end */
+        color: #FF5733; /* Initial color */
+    }
+    25% {
+        transform: translateX(10%); /* Move to the left */
+        color: #FFC300; /* Intermediate color */
+    }
+    65% {
+        transform: translateX(0); /* Move to the right */
+        color: #FFC300; /* Intermediate color */
+    }
+    100% {
+        transform: translateX(100%); /* Move back to the right end */
+        color: #C70039; /* Final color */
+    }
+}
+
+/* View Stocks Card */
+.view-stocks-card {
+    background-color: #ffc107; /* Yellow background */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.view-stocks-card .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.view-stocks-card button {
+    background-color: #007bff; /* Blue button */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-stocks-card button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add Item Card */
+.add-item-card {
+    background-color: #007bff; /* Green background */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-item-card .card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.add-item-card button {
+    background-color: #dc3545; /* Red button */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-item-card button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
